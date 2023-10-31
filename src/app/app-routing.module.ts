@@ -7,6 +7,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { CarritoComponent } from './carrito/carrito.component';
 
 const routes: Routes = [
+  { path: '', component: InicioComponent},
   { path: 'inicio', component: InicioComponent},
   { path: 'frutas', component: FrutasComponent},
   { path: 'verduras', component: VerdurasComponent},

@@ -71,6 +71,7 @@ export class ServicioCarritoService {
    * operador diamante <>.
    */
   @Output() diparadorCarrito: EventEmitter<any> = new EventEmitter();
+  AgregarAlCarrito: any;
 
   constructor() { }
 }

@@ -1,13 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-
-export interface Fruta {
-  titulo: string;
-  image?: string;
-  subtitulo: string;
-  peso: number;
-  precio: number;
-}
+import { Fruta } from '../app.component';
 
 @Component({
   selector: 'app-frutas',
