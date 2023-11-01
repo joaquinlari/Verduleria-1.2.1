@@ -45,8 +45,13 @@ export class CarritoComponent implements OnInit {
       const mercaderiaEnCarrito = { ...data.data };
       this.carrito.push(mercaderiaEnCarrito);
       this.precioTotal += mercaderiaEnCarrito.precioSubtotal;
+      localStorage.setItem('carrito', JSON.stringify(this.carrito));
     });
+    const carritoGuardado = JSON.parse(localStorage.getItem('carrito') ||'[]');
+    this.carrito = carritoGuardado;
+    this.precioTotal = this.carrito.reduce((total, item) => total + item.precioSubtotal, 0);
   }
+
 /**
  * Se obtiene el objeto del artículo a eliminar utilizando el índice proporcionado y se almacena en la variable item.
  * Se utiliza el método splice() para eliminar el artículo del array carrito, utilizando el índice y la cantidad de elementos a eliminar (en este caso, solo se eliminará un elemento).
@@ -57,6 +62,7 @@ export class CarritoComponent implements OnInit {
     const item = this.carrito[index];
     this.carrito.splice(index, 1);
     this.precioTotal -= item.precioSubtotal;
+    localStorage.setItem('carrito', JSON.stringify(this.carrito));
   }
 }
 
