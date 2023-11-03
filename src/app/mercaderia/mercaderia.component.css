@@ -7,7 +7,6 @@
     border-radius: 4px;
     padding: 10px 20px 15px 20px;
     box-shadow: 2px 2px 2px 0.2px rgb(219, 217, 217);
-
 }
 
 hr {
@@ -22,15 +21,18 @@ img{
 }
 
 .carrito {
-    display: flex;
-    width: 130px;
-    height: 30px;
-    align-items: center;
     background-color: #71ac2d;
     border-color: #60a115;
     color: #fff;
+    display: flex;
+    width: 130px;
+    height: 30px;
     font-size: 13px;
+
+    align-items: center;
     margin: 0 auto;
+    padding-left:2px;
+
     border-radius: 4px;
     transition: 0.34s;
     

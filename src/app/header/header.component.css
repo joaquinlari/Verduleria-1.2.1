@@ -62,10 +62,30 @@ ul{
   flex: 1 1 auto;
 }
 
-a{
+.options{
   margin: 0 5px 0 5px;
+  text-decoration: none;
+}
+.options:hover{
+  background-color: #83b45f;
+  color: white;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.ingresar {
+  box-shadow: none;
+}
+
+.ingresar:hover {
+  background-color: white;
+  color:#6ebe35;
+  transition: 0.3s;
+  outline: 1px #6ebe35 solid;
+  box-shadow: none;
 }
 
 .navbar{
   background-color: white;
+  margin-bottom: 10px;
 }

@@ -15,6 +15,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { FrutasComponent } from './frutas/frutas.component';
 import { VerdurasComponent } from './verduras/verduras.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { ContactoComponent } from './contacto/contacto.component';
     FrutasComponent,
     VerdurasComponent,
     ContactoComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

@@ -41,11 +41,7 @@ export class MercaderiaComponent implements OnInit {
 
       this.servicioCarrito.diparadorCarrito.emit({ data: mercaderiaEnCarrito });
 
-      const carritoActualizado = JSON.parse(localStorage.getItem('carrito') || '[]');
-
-      carritoActualizado.push(mercaderiaEnCarrito);
-      
-      localStorage.setItem('carrito', JSON.stringify(carritoActualizado));
+  
     }
   }
 }

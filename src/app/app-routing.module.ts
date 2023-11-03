@@ -5,9 +5,10 @@ import { FrutasComponent } from './frutas/frutas.component';
 import { VerdurasComponent } from './verduras/verduras.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { CarritoComponent } from './carrito/carrito.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: '', component: InicioComponent},
+  { path: '', component: HomeComponent},
   { path: 'inicio', component: InicioComponent},
   { path: 'frutas', component: FrutasComponent},
   { path: 'verduras', component: VerdurasComponent},
